@@ -1,0 +1,9 @@
+streamlit
+streamlit_lottie
+seaborn
+scikit-learn
+statmodel
+xgboost
+lightgbm
+plotly
+plotly_express
