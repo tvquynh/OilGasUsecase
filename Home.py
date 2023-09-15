@@ -1,7 +1,7 @@
 from dependencies import *
 
 
-st.title("Oil & Gas Analytics Plateform")
+st.title("Oil & Gas Analytics Platform")
 
 st.subheader('About')
 

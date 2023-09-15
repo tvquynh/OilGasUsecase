@@ -45,3 +45,4 @@ from streamlit_lottie import st_lottie  # pip install streamlit-lottie
 from scripts.loadanimation import load_lottiefile
 
 import plotly.express as px
+
