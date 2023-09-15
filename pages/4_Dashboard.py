@@ -13,8 +13,9 @@ df = pd.read_csv('./data/testing.csv')
 # Create a Streamlit title and selection box for models
 st.title("Actual vs Predicted Production")
 selected_model = st.selectbox("Select a model:", ["XGBOOST", "LightGBM", "Random Forest Regressor", "Gradient Boosting"])
+
 number_of_records = st.number_input("Select number of records", value=20)
-df = df.tail(number_of_records)
+df = df.head(number_of_records)
 
 # Define a function to make predictions and return a DataFrame
 def predict_and_get_df(selected_model):
