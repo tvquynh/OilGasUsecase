@@ -2,7 +2,7 @@ streamlit
 streamlit_lottie
 seaborn
 scikit-learn
-statmodel
+statmodels
 xgboost
 lightgbm
 plotly
