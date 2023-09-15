@@ -54,7 +54,7 @@ if show_graph:
     df_for_graph = predict_and_get_df(selected_model)
     if df_for_graph is not None:
         fig = px.line(df_for_graph, x=df_for_graph.index, y=['Actual', 'Predicted'],
-                      labels={'index': 'Sample', 'value': 'Value in tons'}, title=f'Actual vs Predicted Production')
+                      labels={'index': 'Number of Records', 'value': 'Value in tons'}, title=f'Actual vs Predicted Production')
         
         # Customize the line colors
         fig.update_traces(line=dict(color='blue'), selector=dict(name='Actual'))
