@@ -34,15 +34,8 @@ import joblib
 import pickle
 
 import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import pandas as pd
-
-import streamlit as st
 from scripts.loadanimation import load_lottiefile
-from streamlit_lottie import st_lottie  # pip install streamlit-lottie
-from scripts.loadanimation import load_lottiefile
+from streamlit_lottie import st_lottie 
 
 import plotly.express as px
 
