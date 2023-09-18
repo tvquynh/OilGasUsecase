@@ -114,12 +114,12 @@ elif selected_option=="Production Trends":
         fig = px.line(
             x=yearly_production.index,
             y=yearly_production,
-            labels={'x': 'Year', 'y': 'Average Production'},
+            labels={'x': 'Year', 'y': 'Overall Production'},
             title="Yearly Trend",
         )
         # fig.update_traces(mode='lines+markers')
         fig.update_xaxes(title="Year")
-        fig.update_yaxes(title="Average Production")
+        fig.update_yaxes(title="Overall Production")
 
         st.plotly_chart(fig)
 
