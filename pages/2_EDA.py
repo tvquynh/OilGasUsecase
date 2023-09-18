@@ -19,7 +19,6 @@ if show_data:
 # EDA Section
 st.header("Exploratory Data Analysis")
 
-
 # List of options
 options = [ "Summary Statistics","Production Rate vs Proppant Volume","Average Production by Month","Average Well Spacing by Treatment Company", "Production Trends"]
 # Display radio buttons for selecting one option
@@ -97,7 +96,7 @@ elif selected_option=="Production Trends":
         yearly_data['month'] = yearly_data['date on production'].dt.month
     # Group data by month and calculate the mean production for each month
         monthly_production = yearly_data.groupby('month')['production'].mean()
-        
+
         fig = px.line(
             x=monthly_production.index,
             y=monthly_production,
@@ -123,3 +122,4 @@ elif selected_option=="Production Trends":
         fig.update_yaxes(title="Average Production")
 
         st.plotly_chart(fig)
+
